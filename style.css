@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  #eaeaea;
+}
+
+
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #dcdcdc;
+    align-items: center;
+    height: 50px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav .logo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+
+
+nav ul li a:hover {
+    color: orange;
+}
+
+
+
+/* GAMBAR HERO COVER */
+header .hero {
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(to right, rgba(0,0,0,0.9)30%, rgba(0,0,0,0.3)), url(assets/hero.jpg);
+    background-size: cover;
+}
+
+h2 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 4em;
+	padding-left: 50px;
+    padding-top: 200px;
+	letter-spacing: 2px;
+    text-shadow: 1px 2px black;
+}
+
+
+
+
+
+/* HAMBURGER MENU */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -5px;
+    top: -3px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color:black;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+
+
+
+/* HAMBURGER MENU ANIMATION */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:last-child {
+    transform-origin: 0 100%;
+}
+
+header nav {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)), url(assets/hero.jpg);
+}
+
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: black;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:last-child {
+    background-color: black;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+
+
+
+
+/* CONTENT-1 */
+.judul-deskripsi {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.deskripsi {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+
+
+
+
+/* CONTENT-2 */
+.judul-menu {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.container {
+    background-color: #dcdcdc;
+    padding: 50px;
+    overflow: auto;
+}
+
+.content {
+    float: right;
+    margin-left: 100px;
+    width: 90%;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.content img {
+    float: left;
+    width: 40%;
+    padding-right: 20px;
+}
+
+.content .nama-menu {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.container-2 {
+    padding: 50px;
+}
+
+.content-2 {
+    float: left;
+    margin-right: 100px;
+    width: 90%;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.content-2 img {
+    float: right;
+    width: 40%;    
+    padding-left: 25px;
+}
+
+.content-2 .nama-menu {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* card content */
+.judul-card {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 10px;
+}
+
+.container-card {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 30%;
+    padding: 5px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail h4 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+/* BIODATA */
+aside {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.box {
+    width: 60%;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.box img {
+    width: 40%;
+    border-radius: 50%;
+    margin-left: 30%;
+    padding-bottom: 10px;
+}
+
+.box p {
+    padding: 10px;
+    text-align: center;
+}
+
+.box h3 {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 30px;
+}
+
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #999;
+}
+
+footer .footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.cf {
+    clear: both;
+}
+

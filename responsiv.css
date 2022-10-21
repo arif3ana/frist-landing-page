@@ -1,0 +1,86 @@
+/* TABLET SIZE */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* MOBILE SIZE */
+@media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul {
+        font-size: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 107vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 0.5;
+        background-color: #dcdcdc;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    header .hero {
+        height: 80%;
+    }
+
+    h2 {
+        font-size: 2em;
+        padding-left: 30px;
+        padding-bottom: 150px;
+        letter-spacing: 1px;
+    }
+
+
+
+        /* content */
+    .judul-deskripsi {
+        font-size: 1.5em;
+    }
+    
+    .deskripsi {
+        font-size: 1em;
+        padding-top: 10px;
+    }
+
+    .judul-menu {
+        font-size: 2em;
+    }
+
+    .content {
+        font-size: 1em;
+    }
+
+    .content-2 {
+        font-size: 1em;
+    }
+    
+
+    .content .nama-menu {
+        font-size: 1.3em;
+    }
+
+    .content-2 .nama-menu {
+        font-size: 1.3em;
+    }
+
+
+    
+/* content card */
+    .judul-card {
+        font-size: 2em;
+        margin-top: 80px;
+    }
+}
